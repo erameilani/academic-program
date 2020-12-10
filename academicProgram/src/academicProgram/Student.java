@@ -49,7 +49,7 @@ public class Student extends Person implements Interface {
 	@Override
 	public void studentRegistration() {
 		System.out.println("### PRINT STUDENT DATA ###");
-		
+
 		if(getNim() != 0) {
 			System.out.println("NIM         : " + getNim());
 			
@@ -110,7 +110,7 @@ public class Student extends Person implements Interface {
         	
         	System.out.print("Course Name : ");
             courseName = input.next();
-            System.out.print("Credits     : ");
+            System.out.print("Credit      : ");
             credit = input.nextInt();
             System.out.print("Lecturer    : ");
             lecturer = input.next();
@@ -118,7 +118,7 @@ public class Student extends Person implements Interface {
             room = input.next();
             
             course.add(new Student(courseName, credit, lecturer, room));
-            totalCredit += course.get(i).getCredit();
+            totalCredit += credit;
 		}
 
 		System.out.println();
